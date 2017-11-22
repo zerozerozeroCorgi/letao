@@ -1,0 +1,81 @@
+.view {
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.view .TL_nav {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.view .TL_nav li {
+  width: 33.33%;
+  float: left;
+}
+.view .cheap {
+  padding: 0 10px;
+}
+.view .cheap li {
+  width: 67.1%;
+  float: left;
+}
+.view .cheap li a {
+  width: 100%;
+}
+.view .cheap li a img {
+  width: 50%;
+  float: left;
+}
+.view .cheap li:nth-child(2) {
+  width: 32.9%;
+  float: right;
+}
+.view .cheap li:nth-child(2) img {
+  width: 100%;
+}
+.view .title {
+  padding: 5px 10px;
+}
+.view .brand {
+  padding: 0 10px;
+}
+.view .brand li {
+  width: 25%;
+  float: left;
+}
+.view .sportLife {
+  padding: 0 10px;
+}
+.view .sportLife .sl_item {
+  width: 50%;
+  padding: 5px;
+  float: left;
+  text-align: center;
+}
+.view .sportLife .sl_item .sl_item_box {
+  box-shadow: 0 0 5px 0 #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.view .sportLife .sl_item .sl_item_box .sl_item_name {
+  font-size: 14px;
+  height: 38px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.view .sportLife .sl_item .sl_item_box .price {
+  font-size: 12px;
+}
+.view .sportLife .sl_item .sl_item_box .price .new_price {
+  color: red;
+}
+.view .sportLife .sl_item .sl_item_box .price .old_price {
+  color: #ccc;
+}
+.view .sportLife .sl_item .sl_item_box .buy_now {
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff2832;
+  color: #fff;
+}
+/*# sourceMappingURL=./index.css.map */

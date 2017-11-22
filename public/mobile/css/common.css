@@ -15,8 +15,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 header h1 {
   height: 45px;
@@ -24,9 +35,10 @@ header h1 {
   font-size: 17px;
   text-align: center;
   line-height: 45px;
-  background-color: #006699;
+  background-color: #ff2832;
+  margin: 0;
 }
-header a {
+header a.hd_right {
   padding: 3px;
   font-size: 18px;
   color: #fff;
@@ -35,17 +47,26 @@ header a {
   top: 50%;
   transform: translateY(-50%);
 }
+header a.hd_left {
+  padding: 3px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 footer {
   height: 50px;
   width: 100%;
-  display: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
 footer a {
   width: 25%;
   height: 100%;
-  background-color: #006699;
+  background-color: #ff2832;
   color: #fff;
   float: left;
   text-align: center;
@@ -54,12 +75,12 @@ footer a {
 footer a .mui-icon {
   font-size: 20px;
 }
-footer a:focus {
-  color: #ff8c00;
-}
 footer a p {
   font-size: 12px;
   color: inherit;
   margin-bottom: 0;
+}
+footer .active {
+  color: #ff8c00;
 }
 /*# sourceMappingURL=./common.css.map */

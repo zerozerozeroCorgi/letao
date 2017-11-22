@@ -1,0 +1,98 @@
+
+
+.view {
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+
+    // 轮播图
+    .mui-slider {}
+
+    // 导航栏
+    .TL_nav {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        li {
+            width: 33.33%;
+            float: left;
+        }
+    }
+
+    // 低价
+    .cheap {
+        padding: 0 10px;
+        li {
+            width: 67.1%;
+            float: left;
+            a {
+                width: 100%;
+                img {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+        li:nth-child(2) {
+            width: 32.9%;
+            float: right;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 标题
+    .title {
+        padding: 5px 10px;
+    }
+
+    // 品牌
+    .brand {
+        padding: 0 10px;
+        li {
+            width: 25%;
+            float: left;
+        }
+    }
+
+    // 运动生活专区
+    .sportLife {
+        padding: 0 10px;
+        .sl_item {
+            width: 50%;
+            padding:5px;
+            float: left;
+            text-align: center;
+            .sl_item_box {
+                box-shadow: 0 0 5px 0 #ccc;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .sl_item_name {
+                    font-size: 14px;
+                    height: 38px;
+                    overflow: hidden;
+                    padding: 0 10px;
+                }
+                .price {
+                    font-size: 12px;
+                    .new_price {
+                        color: red;
+                    }
+                    .old_price {
+                        color: #ccc;
+                    }
+                }
+                .buy_now {
+                    font-size: 14px;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background-color: #ff2832;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+
+}

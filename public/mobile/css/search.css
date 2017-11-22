@@ -1,0 +1,60 @@
+header .icon_back {
+  left: 0;
+}
+.view {
+  background-color: #fff;
+  padding: 10px;
+  height: 100%;
+}
+.view .search_bar {
+  height: 30px;
+}
+.view .search_bar .searchTxt {
+  width: 80%;
+  height: 30px;
+  float: left;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ff2832;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-indent: 10px;
+  font-size: 12px;
+  border-radius: 6px 0 0 6px;
+}
+.view .search_bar .searchBtn {
+  width: 20%;
+  height: 100%;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  float: left;
+  background-color: #ff2832;
+  border-radius: 0 6px 6px 0;
+}
+.view .search_history {
+  padding: 10px 0;
+  color: #666;
+}
+.view .search_history .search_history_top {
+  font-size: 12px;
+}
+.view .search_history .search_history_list {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.view .search_history .search_history_list a {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.view .search_history .search_history_list a .icon_delete {
+  margin-top: 4px;
+}
+.view .search_history .search_history_list a:last-child {
+  border-bottom: 1px solid #ccc;
+}
+/*# sourceMappingURL=./search.css.map */
