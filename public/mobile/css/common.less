@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+// 头部
+header {
+    position: relative;
+    h1 {
+        height: 45px;
+        color: #fff;
+        font-size: 17px;
+        text-align: center;
+        line-height: 45px;
+        background-color: #006699;
+    }
+    a {
+        padding: 3px;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    display: fixed;
+    bottom: 0;
+    left: 0;
+    a {
+        width: 25%;
+        height: 100%;
+        background-color: #006699;
+        color: #fff;
+        float: left;
+        text-align: center;
+        padding: 8px 0;
+        .mui-icon {
+            font-size: 20px;
+        }
+        &:focus {
+            color: #ff8c00;
+        }
+        p {
+            font-size: 12px;
+            color: inherit;
+            margin-bottom: 0;
+        }
+    }
+}
