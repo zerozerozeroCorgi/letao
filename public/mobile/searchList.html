@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico">
+    <title>乐淘 - 搜索中心</title>
+    <link rel="stylesheet" href="./asset/mui/css/mui.css">
+    <link rel="stylesheet" href="./asset/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/searchList.css">
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <h1>搜索中心</h1>
+        <a href="javascript:history.back()" class="icon_back fa fa-arrow-left hd_left"></a>
+    </header>
+
+    <div class="view">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--数据列表-->
+                <ul class="mui-table-view mui-table-view-chevron">
+
+                    <!-- 搜索框 -->
+                    <div class="search_bar">
+                        <form action="" class="mui-cleafix">
+                            <input type="text" name="" class="searchTxt" placeholder="搜索你喜欢的商品">
+                            <a href="javascript:;" class="searchBtn">搜索</a>
+                        </form>
+                    </div>
+
+                    <!-- 工具栏 -->
+                    <div class="orderBar mui-clearfix">
+                        <a href="javascript:;" data-type="time">
+                            <span>上架时间</span>
+                            <span class="mui-icon mui-icon-arrowdown"></span>
+                        </a>
+                        <a href="javascript:;" data-type="price">
+                            <span>价格</span>
+                            <span class="mui-icon mui-icon-arrowdown"></span>
+                        </a>
+                        <a href="javascript:;" data-type="num">
+                            <span>销量</span>
+                            <span class="mui-icon mui-icon-arrowdown"></span>
+                        </a>
+                        <a href="javascript:;" data-type="discount">
+                            <span>折扣</span>
+                            <span class="mui-icon mui-icon-arrowdown"></span>
+                        </a>
+                    </div>
+                    
+                    <!-- 产品列表 -->
+                    <div class="sportLife mui-clearfix">
+                         <!-- <div class="sl_item">
+                            <div class="sl_item_box">
+                                <img src="./images/product.jpg" alt="" class="sl_item_img">
+                                <p class="sl_item_name">adidas阿迪达斯 男式 场下休闲篮球鞋S83700 </p>
+                                <p class="price">
+                                    <span class="new_price">￥560.00&nbsp;&nbsp;</span>
+                                    <del class="old_price">￥888.00</del>
+                                </p>
+                                <a href="javascript:;" class="buy_now">立即购买</a>
+                            </div>
+                        </div>  -->
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+   
+
+
+
+
+    <!-- 底部 -->
+    <footer class="mui-clearfix">
+        <a href="index.html">
+            <span class="tab_home fa fa-home now"></span>
+            <p>首页</p>
+        </a>
+        <a href="category.html">
+            <span class="tab_cate fa fa-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="shopCart.html">
+            <span class="tab_cart fa fa-shopping-cart"></span>
+            <p>购物车</p>
+        </a>
+        <a href="user/index.html">
+            <span class="tab_user fa fa-user"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+
+
+    <script type="text/html" id="productListTpl">
+        {{each data as value}}
+        <div class="sl_item">
+            <div class="sl_item_box">
+                <img src="{{value.pic[0].picAddr}}" alt="" class="sl_item_img">
+                <p class="sl_item_name">{{value.proName}}</p>
+                <p class="price">
+                    <span class="new_price">￥{{value.price}}&nbsp;&nbsp;</span>
+                    <del class="old_price">￥{{value.oldPrice}}</del>
+                </p>
+                <a href="javascript:;" class="buy_now" data-productid={{value.id}}>立即购买</a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+
+</body>
+</html>
+<script src="./asset/mui/js/mui.js"></script>
+<script src="./asset/artTemplate/template.js"></script>
+<script src="./asset/zepto/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/searchList.js"></script>

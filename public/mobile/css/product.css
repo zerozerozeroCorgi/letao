@@ -1,0 +1,21 @@
+header {
+  padding: 7.5px 40px;
+  background-color: #ff2832;
+  height: 45px;
+}
+header h2 {
+  height: 30px;
+  margin: 0;
+  width: 100%;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+header a.hd_left {
+  left: 10px;
+}
+header a.hd_right {
+  right: 10px;
+}
+/*# sourceMappingURL=./product.css.map */

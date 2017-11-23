@@ -32,12 +32,16 @@ body {
 
 
 
+
+
+
 // 头部
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
     h1 {
         height: 45px;
         color: #fff;
@@ -67,6 +71,19 @@ header {
     }
 }
 
+// 遮罩层
+.mui-backdrop {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.3);
+}
+
+
+
 footer {
     height: 50px;
     width: 100%;
@@ -92,6 +109,6 @@ footer {
         }
     }
     .active {
-        color: #ff8c00;
+        background-color: #666;
     }
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico">
+    <title>乐淘 - 商品详情</title>
+    <link rel="stylesheet" href="./asset/mui/css/mui.css">
+    <link rel="stylesheet" href="./asset/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <a href="javascript:history.back()" class="icon_back fa fa-arrow-left hd_left"></a>
+        <h2>商品详情</h2>
+        <a href="./index.html" class="icon_home fa fa-home hd_right"></a>
+    </header>
+
+    <div class="view">
+        <!-- <span class="fa fa-spinner fa-pulse"></span> -->
+        
+        <!-- 轮播图 -->
+        <div id="slider" class="mui-slider" data-slider="1" data-slidershowtimer="233">
+			<div class="mui-slider-group mui-slider-loop" style="transform: translate3d(-1280px, 0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-duration: 0ms;">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator mui-active"></div>
+			</div>
+		</div>
+
+    </div>
+    
+
+   
+
+
+
+
+    <!-- 底部 -->
+    <footer class="mui-clearfix">
+        <a href="index.html">
+            <span class="tab_home fa fa-home now"></span>
+            <p>首页</p>
+        </a>
+        <a href="category.html">
+            <span class="tab_cate fa fa-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="shopCart.html">
+            <span class="tab_cart fa fa-shopping-cart"></span>
+            <p>购物车</p>
+        </a>
+        <a href="user/index.html">
+            <span class="tab_user fa fa-user"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+
+
+</body>
+</html>
+<script src="./asset/mui/js/mui.js"></script>
+<script src="./asset/artTemplate/template.js"></script>
+<script src="./asset/zepto/zepto.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/product.js"></script>

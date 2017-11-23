@@ -1,0 +1,94 @@
+.view {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+}
+.view #refreshContainer {
+  background-color: #fff;
+}
+.view .search_bar {
+  height: 50px;
+  padding: 10px;
+}
+.view .search_bar .searchTxt {
+  width: 80%;
+  height: 30px;
+  float: left;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ff2832;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  text-indent: 10px;
+  font-size: 12px;
+  border-radius: 6px 0 0 6px;
+}
+.view .search_bar .searchBtn {
+  width: 20%;
+  height: 100%;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  float: left;
+  background-color: #ff2832;
+  border-radius: 0 6px 6px 0;
+}
+.view .orderBar {
+  padding-bottom: 10px;
+}
+.view .orderBar > a {
+  font-size: 12px;
+  color: #000;
+  background-color: #efeff4;
+  text-align: center;
+  width: 25%;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+}
+.view .orderBar > a .mui-icon {
+  font-size: 12px;
+}
+.view .orderBar .active {
+  color: #ff2832;
+}
+.view .sportLife {
+  padding: 0 10px;
+}
+.view .sportLife .sl_item {
+  width: 50%;
+  padding: 5px 5px 10px;
+  float: left;
+  text-align: center;
+}
+.view .sportLife .sl_item .sl_item_box {
+  box-shadow: 0 0 5px 0 #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.view .sportLife .sl_item .sl_item_box .sl_item_name {
+  font-size: 14px;
+  height: 38px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.view .sportLife .sl_item .sl_item_box .price {
+  font-size: 12px;
+}
+.view .sportLife .sl_item .sl_item_box .price .new_price {
+  color: red;
+}
+.view .sportLife .sl_item .sl_item_box .price .old_price {
+  color: #ccc;
+}
+.view .sportLife .sl_item .sl_item_box .buy_now {
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff2832;
+  color: #fff;
+}
+/*# sourceMappingURL=./searchList.css.map */

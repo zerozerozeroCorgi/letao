@@ -28,6 +28,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 header h1 {
   height: 45px;
@@ -56,6 +57,15 @@ header a.hd_left {
   top: 50%;
   transform: translateY(-50%);
 }
+.mui-backdrop {
+  position: fixed;
+  top: 45px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 footer {
   height: 50px;
   width: 100%;
@@ -81,6 +91,6 @@ footer a p {
   margin-bottom: 0;
 }
 footer .active {
-  color: #ff8c00;
+  background-color: #666;
 }
 /*# sourceMappingURL=./common.css.map */

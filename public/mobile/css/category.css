@@ -1,0 +1,76 @@
+header {
+  padding: 7.5px 40px;
+  background-color: #ff2832;
+  height: 45px;
+}
+header > input[type="text"] {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  text-indent: 10px;
+  font-size: 14px;
+}
+header a.hd_left {
+  left: 10px;
+}
+header a.hd_right {
+  right: 10px;
+}
+.view {
+  height: 100%;
+  position: relative;
+}
+.view span.fa-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+  display: none;
+}
+.view .category {
+  height: 100%;
+  background-color: #f3f5f7;
+  padding: 10px 10px 0 90px;
+  position: relative;
+}
+.view .category .category_left {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+}
+.view .category .category_left ul {
+  height: 100%;
+  overflow: scroll;
+}
+.view .category .category_left ul li {
+  width: 80px;
+  height: 45px;
+  border-bottom: 1px solid #ff2832;
+  border-right: 1px solid #ff2832;
+  font-size: 14px;
+  text-align: center;
+  line-height: 45px;
+}
+.view .category .category_left ul li a {
+  color: inherit;
+}
+.view .category .category_left ul .active {
+  color: #ff2832;
+}
+.view .category .category_right {
+  width: 100%;
+  background-color: #fff;
+}
+.view .category .category_right ul li {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+}
+.view .category .category_right ul li a {
+  color: #888;
+}
+/*# sourceMappingURL=./category.css.map */
