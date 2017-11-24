@@ -23,35 +23,70 @@
     <div class="view">
         <!-- <span class="fa fa-spinner fa-pulse"></span> -->
         
-        <!-- 轮播图 -->
-        <div id="slider" class="mui-slider" data-slider="1" data-slidershowtimer="233">
-			<div class="mui-slider-group mui-slider-loop" style="transform: translate3d(-1280px, 0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); transition-duration: 0ms;">
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="../images/yuantiao.jpg">
-					</a>
-				</div>
-				<!-- 第一张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="../images/shuijiao.jpg">
-					</a>
-				</div>
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="../images/shuijiao.jpg">
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator mui-active"></div>
-			</div>
-		</div>
+        <div class="mui-scroll-wrapper">
+	        <div class="mui-scroll">
+                 <!-- 轮播图  
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                         <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/product.jpg">
+                            </a>
+                        </div> 
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/product.jpg">
+                            </a>
+                        </div>
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/product.jpg">
+                            </a>
+                        </div>
+                         <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/product.jpg">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+
+                <div class="product_title">
+                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                </div>
+                <div class="product_price">
+                    <span class="product_price_title">价格：</span>
+                    <span class="new_price">￥499.1</span>
+                    <del class="old_price">￥888.1</del>
+                </div>
+                <div class="product_size">
+                    尺码：
+                    <span class="size on">41</span>
+                    <span class="size">42</span>
+                    <span class="size">43</span>
+                    <span class="size">44</span>
+                    <span class="size">45</span>
+                    <span class="size">46</span>
+                    <span class="size">47</span>
+                    <span class="size">48</span>
+                    <span class="size">49</span>
+                </div>
+                <div class="product_num">
+                    <span class="product_num_amount">数量：</span>
+                    <div class="mui-numbox"  data-numbox-step='1' data-numbox-min='1' data-numbox-max='100'>
+                        <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                        <input class="mui-numbox-input" type="number" />
+                        <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                    </div>
+                    <span class="product_num_stock">剩余：20件</span>
+                </div> -->
+
+            </div>
+        </div>
 
     </div>
     
@@ -62,24 +97,74 @@
 
 
     <!-- 底部 -->
-    <footer class="mui-clearfix">
-        <a href="index.html">
-            <span class="tab_home fa fa-home now"></span>
-            <p>首页</p>
-        </a>
-        <a href="category.html">
-            <span class="tab_cate fa fa-bars"></span>
-            <p>分类</p>
-        </a>
-        <a href="shopCart.html">
-            <span class="tab_cart fa fa-shopping-cart"></span>
-            <p>购物车</p>
-        </a>
-        <a href="user/index.html">
-            <span class="tab_user fa fa-user"></span>
-            <p>会员中心</p>
-        </a>
-    </footer>
+    <div class="lt_footer mui-clearfix">
+       <a href="./cart.html" class="btn_cart fa fa-shopping-cart"></a>
+       <a href="javascript:;" class="btn_addCart">加入购物车</a>
+       <a href="javascript:;" class="btn_buy">立即购买</a>
+    </div>
+
+
+
+    <script type="text/html" id="productTpl">
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="{{pic[pic.length-1].picAddr}}">
+                            </a>
+                        </div> 
+                        {{each pic as value}}
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="{{value.picAddr}}">
+                            </a>
+                        </div>
+                        {{/each}}
+                        
+                         <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="{{pic[0].picAddr}}">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        {{each pic as value index}}
+                            {{if index > 0}}
+                            <div class="mui-indicator"></div>
+                            {{/if}}
+                        {{/each}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_title">
+                    {{proName}}
+                </div>
+                <div class="product_price">
+                    <span class="product_price_title">价格：</span>
+                    <span class="new_price">￥{{price}}</span>
+                    <del class="old_price">￥{{oldPrice}}</del>
+                </div>
+                <div class="product_size">
+                    尺码：
+                    {{each sizeArr as value1}}
+                    <span class="size">{{value1}}</span>
+                    {{/each}}
+                </div>
+                <div class="product_num">
+                    <span class="product_num_amount">数量：</span>
+                    <div class="mui-numbox"  data-numbox-step='1' data-numbox-min='1' data-numbox-max='{{num}}'>
+                        <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                        <input class="mui-numbox-input" type="number" />
+                        <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                    </div>
+                    <span class="product_num_stock">剩余：{{num}}件</span>
+                </div>
+
+    </script>
+
+
 
 
 </body>

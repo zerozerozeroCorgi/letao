@@ -18,4 +18,104 @@ header a.hd_left {
 header a.hd_right {
   right: 10px;
 }
+.view {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+}
+.view .product_title {
+  padding: 15px 5px;
+  font-size: 18px;
+}
+.view .product_price {
+  padding: 12px 5px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 0;
+  line-height: 1;
+}
+.view .product_price .product_price_title {
+  font-size: 14px;
+}
+.view .product_price .new_price {
+  font-size: 24px;
+  color: #ea543d;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 600;
+}
+.view .product_price .old_price {
+  font-size: 14px;
+  color: #afafaf;
+  margin-left: 10px;
+}
+.view .product_size {
+  font-size: 14px;
+  padding: 10px 5px;
+}
+.view .product_size span.size {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.view .product_size .on {
+  color: #fff;
+  background-color: #ff2832;
+  border: none;
+}
+.view .product_num {
+  font-size: 12px;
+  padding: 10px 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.view .product_num .mui-numbox {
+  width: 84px;
+  height: 28px;
+  padding: 0 28px;
+}
+.view .product_num .mui-numbox button {
+  width: 28px;
+}
+.view .product_num .mui-numbox input.mui-numbox-input {
+  padding: 0;
+}
+.lt_footer {
+  background-color: #e6e6e6;
+  padding: 6px 5px 0 60px;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.lt_footer .btn_cart {
+  font-size: 20px;
+  color: #333;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lt_footer .btn_addCart,
+.lt_footer .btn_buy {
+  width: 49%;
+  height: 40px;
+  float: left;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.lt_footer .btn_addCart {
+  background-color: #991020;
+  margin-right: 2%;
+}
+.lt_footer .btn_buy {
+  background-color: #ff2832;
+}
 /*# sourceMappingURL=./product.css.map */

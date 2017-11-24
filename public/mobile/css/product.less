@@ -18,3 +18,108 @@ header {
         right: 10px;
     }
 }
+
+.view {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+    .product_title {
+        padding: 15px 5px;
+        font-size: 18px;
+    }
+    .product_price {
+        padding: 12px 5px;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 0;
+        line-height: 1;
+        .product_price_title {
+            font-size: 14px;
+        }
+        .new_price {
+            font-size: 24px;
+            color: #ea543d;
+            font-family: 'Helvetica Neue',Helvetica,sans-serif;
+            font-weight: 600;
+        }
+        .old_price {
+            font-size: 14px;
+            color: #afafaf;
+            margin-left: 10px;
+        }
+    }
+    .product_size {
+        font-size: 14px;
+        padding: 10px 5px;
+        span.size {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .on {
+            color: #fff;
+            background-color: #ff2832;
+            border: none;
+        }
+    }
+    .product_num {
+        font-size: 12px;
+        padding: 10px 5px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        .mui-numbox {
+            width: 84px;
+            height: 28px;
+            padding: 0 28px;
+            button {
+                width: 28px;
+            }
+            input.mui-numbox-input {
+                padding: 0;
+            }
+            
+        }
+    }
+}
+
+
+
+.lt_footer {
+    background-color: #e6e6e6;
+    padding: 6px 5px 0 60px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .btn_cart {
+        font-size: 20px;
+        color: #333;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .btn_addCart,
+    .btn_buy {
+        width: 49%;
+        height: 40px;
+        float: left;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .btn_addCart {
+        background-color: #991020;
+        margin-right: 2%;
+    }
+    .btn_buy {
+        background-color: #ff2832;
+    }
+}
